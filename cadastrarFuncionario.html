@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cadastro de Funcionário</title>
+</head>
+<style>
+ h1{
+    padding-left: 700px;
+    padding-top: 100px;
+ }
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* Espaçamento entre os itens */
+      width: 100%; /* Ajuste a largura conforme necessário */
+      max-width: 400px; /* Ajuste a largura máxima conforme necessário */
+      padding-left: 680px;
+      padding-top: 100px;
+    }
+    .form-control {
+      width: 100%; /* Ajuste a largura conforme necessário */
+    }
+    .button {
+      padding: 10px 20px; /* Ajuste o padding conforme necessário */
+    }
+  </style>
+
+<body>
+    <h1>Cadastro de Funcionário</h1> 
+
+    <form class="formulario">
+        <div class="container-nome">
+            <label for="inputName" class="form-label-nome">Nome Completo</label>
+            <input type="text" class="form-control" id="inputName" >
+        </div>
+        <div class="container-email">
+            <label for="inputEmail4" class="form-label-email">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="container-usuario">
+            <label for="inputUsuario" class="form-label-usuario">Usuário</label>
+            <input type="text" class="form-control" id="inputUsuario" >
+        </div>
+        <div class="container-senha">
+            <label for="inputPassword4" class="form-label-senha">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="container-button">
+            <button type="submit" class="button">Cadastrar</button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Pedidos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+        }
+        input, select, button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        h1{
+            padding-left: 35%;
+            padding-bottom: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Cadastro de Pedidos</h1>
+        <form>
+            <input type="text" placeholder="Nome do Cliente" required>
+            <input type="email" placeholder="Email do Cliente" required>
+            <select required>
+                <option value="" disabled selected>Selecione a Peça de Roupa</option>
+                <option value="camiseta">Camiseta</option>
+                <option value="calca">Calça</option>
+                <option value="vestido">Vestido</option>
+          
+            </select>
+            <select required>
+                <option value="" disabled selected>Selecione o Tamanho</option>
+                <option value="p">P</option>
+                <option value="m">M</option>
+                <option value="g">G</option>
+        
+            </select>
+            <input type="number" placeholder="Quantidade" required>
+            <button type="submit">Cadastrar Pedido</button>
+        </form>
+    </div>
+</body>
+</html>
